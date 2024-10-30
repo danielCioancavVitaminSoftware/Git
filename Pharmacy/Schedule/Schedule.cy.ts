@@ -10,8 +10,7 @@ describe ("Lumistry Login", () => {
             cy.get("input[aria-label='Text field'][type='text']")
                 .type('dcioanca+UAT-pharmacy-brand-1009@digitalpharmacist.com')
                 .should('have.value', 'dcioanca+UAT-pharmacy-brand-1009@digitalpharmacist.com');
-                
-            cy.wait(500)    
+  
             cy.get("input[aria-label='Text field'][type='password']").type("9.iLgdJ@v!hi7RikfBcR")
 
             cy.get(".css-175oi2r.r-1awozwy.r-18u37iz.r-1777fci").click();
